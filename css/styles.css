@@ -133,19 +133,31 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
  }
- .header-contacts-icon {
-    fill: var(--primary-text-color);
-    margin-right: 10px;
+.header-contacts-icon {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
  }
- .link:hover .header-contacts-icon,
- .link:focus .header-contacts-icon {
-   fill: var(--accent-color)
+.link:hover .header-contacts-icon,
+.link:focus .header-contacts-icon {
+  fill: var(--accent-color)
  }
- .header-contacts-item .link {
-   display: flex;
-   align-items: center;
-    }
- 
+.header-contacts-item .link {
+  display: flex;
+  align-items: center;
+}
+.site-nav-item {
+  position: relative;
+}
+.current::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: var(--accent-color);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  top: calc(100% - 3px);
+}
  /* Главная страница */
 
 /* Герой */
