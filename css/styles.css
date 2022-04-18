@@ -286,9 +286,35 @@ img {
 }
 .we-doing-list {
   display: flex;
+  
 }
 .we-doing-item:not(:last-child) {
   margin-right: 30px;
+}
+.we-doing-overlay {
+  position: relative; 
+  }
+.we-doing-text {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--third-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  justify-content: center;
+  align-items: center;
+  
 }
 /* Секция Наша команда */
 .command {
