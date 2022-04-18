@@ -100,6 +100,10 @@ img {
   padding-bottom: 32px;
 
   color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-contacts .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -134,13 +138,10 @@ img {
   padding-bottom: 32px;
  }
 .header-contacts-icon {
-  fill: var(--primary-text-color);
+  fill: currentColor;
   margin-right: 10px;
- }
-.link:hover .header-contacts-icon,
-.link:focus .header-contacts-icon {
-  fill: var(--accent-color)
- }
+   }
+
 .header-contacts-item .link {
   display: flex;
   align-items: center;
@@ -211,6 +212,8 @@ img {
   min-height: 50px;
   border-radius: 4px;
   padding: 10px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -338,22 +341,25 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-bg-color);
+  
   border-radius: 50%;
   width: 44px;
   height: 44px;
+
+  color: var(--icon-color);
+  background-color: var(--primary-bg-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+  
 .command-icon {
-    fill: var(--icon-color);
+    fill: currentColor;
 }
 .command-link:hover,
 .command-link:focus {
+  color: var(--primary-bg-color);
   background-color: var(--accent-color);
-}
-.command-link:hover .command-icon,
-.command-link:focus .command-icon
- {
-  fill:var(--primary-bg-color)
 }
 /* Секция Постоянные клиенты */
 .clients-list {
@@ -371,18 +377,20 @@ img {
   width: 170px;
   height: 92px;
 
-  border: 1px solid var(--icon-color);
+  border: 1px solid currentColor;
   border-radius: 4px;
 }
+.clients-link {
+  color: var(--icon-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .clients-icon {
-  fill: var(--icon-color);
+  fill: currentColor;
 }
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
-}
-.clients-link:hover .clients-thumb,
-.clients-link:focus .clients-thumb {
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
@@ -411,6 +419,9 @@ img {
 
   padding: 6px 22px;
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-main:hover,
 .button-main:focus {
@@ -435,6 +446,7 @@ img {
 }
 .project-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-link:hover,
 .project-link:focus {
@@ -484,9 +496,11 @@ img {
 }
 .footer-contacts.address {
   color: var(--third-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contacts {
   color: var(--footer-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list {
   width: 231px;
@@ -533,6 +547,7 @@ img {
   border-radius: 50%;
   width: 44px;
   height: 44px; 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
